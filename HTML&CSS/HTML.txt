@@ -1,0 +1,40 @@
+1. HTML:
+    Hyper text markup language. Is the most basic building block of the web.
+    It defines the meaning and structure of web content.
+2. Basis tags:
+    <></>
+    <head></head>- basic container of the meta data
+    <a>- for link
+    <b>- to make bold text
+    <strong>- to make bold text
+    <body>- main content
+    <br>- next line
+    <div>- division of the page
+    <i>- Italic text
+    <img>- Image
+    <p>- Paragraph
+    <span> to style part of text
+    <ol><ul><li>
+3. Inline vs Block elements
+    Block- Always start with newline and consumes entire width of the line.
+    Browser add some space before and after the elements.
+        <div>,<p>.....
+    Inline- consumes only textarea, DOesn't start with newline.
+        <span>,<b>,<i>....
+4. Table:
+    <table> creating tags.
+    <th> Table head.
+    <tr> Table row.
+    <td> Table data (Column value).
+    Border collaps: to make border single line.
+    Cols span="NO." - Used to merge cells.
+
+5. Units:
+    Absolute Unit:(Independent)
+        px.
+    Relative Unit:(Dependent)
+        em.
+        rem.(default font size 16px)
+        %.
+        vw,vh- viewport width/Height
+        ch.

@@ -1,0 +1,54 @@
+1. Prototype:
+    Each object has a private property which holds a link to another object called its prototype.
+
+2. The popular 'this' keyword:
+    This keyword points to the global window object in the context of
+    browser when written inside a regular function call.
+    'this' keyword points to the onject to which the method is bond.
+
+3. The method-bind(),call(), apply():
+    Used to bind a function while passing the desiredscope to the inner function.
+    
+4. CSS Selectors:
+    Element,ID, Class
+    Element-call by name.
+    ID-call using #_name.
+    Class- create with ._ClassName, and invoke the class for html element
+
+5. Inline:
+    No linebreak without Space.
+
+6. Block:
+    linebreak with Space.
+
+7. Inline-Block:
+    same line with space.
+
+8. Mobile 1st Approach/ Design:
+    It is easier to scal a design up to larger screen than to scal in down to smaller screens. Due to the massive growth of mobile browsing,
+    this makes mobile first design a great development.
+
+9. Bootstrap:
+        Bootstrap has always been the in-demand potential framework for developing responsive projects. 
+        Bootstrap offers a responsive, mobile-first fluid grid system that adequately scales up to 12 columns 
+        as the screen or viewport size increases. It’s jam-packed with predefined classes for easy layout creation, 
+        as well as useful mixins for generating semantic and fluid layouts.
+
+        Container: 
+            It is the fundamental building blocks of the BS layout.
+
+10. DOM- Document object model:
+    The Programming interface for interacting with an HTML document represented as a tree data structure.
+    Each HTML elemnt in the document is a node in the DOM Tree, with nested content represented as children in the tree. 
+        * Provides an API
+        * Tree structure
+        * Element & Text are nodes   
+
+11. ES5 VS ES6
+    The major version of JS has been released in 2015- ES6
+    All versions before ES6 can be considered as ES5.
+
+12. Scoping:
+    Function Scope- var-(sometime global scope)
+    Block Scope- let, const
+    Hoisting will work only on Let/ const

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .sibling{
+                background-color: grey;
+            }
+            .main{
+                position: static;
+                /* Static is normal flow */
+                /* Relative-relative to parent we can use top, r8, left, bottom */
+                /* Absolute- the div comes out from its place and we can adjust its position within parent */
+                /* Fixed- we can fix the position anywhere even we scroll the div is still fixed at the same position */
+                /* Sticky- Position is sticked to its parent div better when we use image as background */
+                background-color: aqua;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 2px 2px 2px 2px ;
+            }
+            .parent{
+                position: relative;
+                height: 100px;
+                background-color: dodgerblue;
+                padding:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="sibling">Sibling Element</div>
+            <div class="main">main Element</div>
+            <div class="sibling">Sibling Element</div>
+        </div>
+    </body>
+</html>

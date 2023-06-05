@@ -1,0 +1,62 @@
+Database:
+    -Is an organized collection of information or data, typically stored
+    electronically in a computer system.
+
+MySQL: (Micheal Widenius(Founder)[Daughter 'My'] Structured querying language)
+    -Is an opensource relational DB management system.
+    RDBMS- Relational database management system.
+
+SQL: Structured querying language.
+Prgoramming Language:                        Query language:
+    * Procedural                                  * Declarative
+    * Line to line execution                      * No need
+    * Needs Prgoramming                           * no programming
+
+Complier Design:
+    - It has a "parser compiler"- breaks into parts eg: "select name from students where age > 22;"
+
+SQL Commands:
+select * from students;
+Create TAble students(
+    name TEXT NOT NULL,
+    age int NOT NULL,
+    edu TEXT NIT NULL
+);
+
+ALTER TAble students ADD id int NOT NULL;// will add items at last
+
+INSERT INTO Students VALUES ('Arshath', 22, 'BE ME',1);
+INSERT INTO Students VALUES ('Ameen', 22, 'BE ME',2);
+INSERT INTO Students VALUES ('ArShanmeershath', 22, 'BE ME',3);
+INSERT INTO Students VALUES ('Irfan', 22, 'BE ME',4);
+INSERT INTO Students VALUES ('Thariq', 22, 'BE ME',5);// once altered we need to rewrite table contents
+
+UPDATE Students SET name='Arshath AMeen' where name='Arshath';
+
+select * from Students order by id desc; // wich orders a table by ID, if desc added it order the table by descending
+
+select distinct age from STudents; this will give a non-repetive list of ages.
+
+select COUNT(name), edu from student GROUP BY edu; // which will give the count of edu with count.
+// group by must have 1 aggregated funciton to perform.
+
+Joins:
+    Which allows to access two or more tables from one place.
+        -Inner Joins: Returns dataset that have
+         matching values on both tables. (like Intersection)
+        -Left Join : Returns all records from the left table and 
+        matched record from right table.
+        -Right Join : Returns all records from the right table and 
+        matched record from left table.
+        -Full Join:Returns all records when there is a match 
+        in either left or right table. (like Intersection)
+Normalization: 
+    It is the process of organizing the data in the database.
+    it divides the larger table into smaller and links them using relationship
+    (Primary Key & Foreign Key).
+    Which is used to reduce the redundancy from database table.
+        1 NF -Contains atomic value [col must contain single value]
+        2 NF -Primary key dependancy + 1NF
+        3 NF -2NF + transition dependancy
+        4 NF -BCNF (Boyce codd's Normal form) - no multi value dependancy
+        5 NF -Satisfies when a table is broken into more pieces + 4NF

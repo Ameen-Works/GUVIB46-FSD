@@ -1,0 +1,48 @@
+React:
+    - Its is a JS Library, Used to build better and awesome UI.
+    - Developed by FB Engineers, with vast advantages.
+        = Virtual DOM
+        = Helps to build interactive UIs called webapps.
+        = Latest feature of JS can be used.
+        = Open source- So, has a huge eco-system[NPM].
+        = Uses JSX- JS+ HTML(Needs babel to compile JSX).
+
+Babel: (=>-Follows)
+    - React => ES specifications
+    - ES6 edition of ECMA Script
+    - Browser/ V8 engine[ Any JS engine] can understand only ES5 [Old JS].
+    - Hence, Babel acts as a JS compiler that converts ES6 code standards into ES5, whcich
+    can be run on any browser.
+
+NOde JS- Runtime Environment to execute JS files.
+
+Hooks:
+
+    useRef():
+        When you want a component to remember some information, but you don't want that 
+        information to trigger new renders, you can use a useRef.
+        Always returns an object like {current:'default'}.
+
+    useReducer():
+
+
+Redux:
+        Redux is a state management library.
+        It provides a predicatable way to manage the state of our application by centralizing It
+        in a single store.
+        Redux uses an uni-directional flow- which means data flow in ond e direction only,
+        from the store to the components.
+    Principles:
+        1. Single source of truth.
+        2. State is read-only.
+        3. Changes are made with pure function.
+
+Redux VS Context API:
+    1. Approach is different.
+    2. Redux is centralized, whereas Context API is decentralized.
+    3. Redux would be more performable when dealing with large 
+    and complex application.
+    4. Context is simpler to use.
+
+
+

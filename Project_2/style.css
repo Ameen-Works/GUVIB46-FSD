@@ -1,0 +1,58 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 1fr 0.5fr 3fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main aside"
+            "footer aside";
+    
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+
+body > *{
+    border: 5px solid dodgerblue;
+    padding: 5px;
+}
+
+@media (min-width: 800px){
+    /* Above 800px this size will retain */
+    body{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas: 
+            "header header header"
+            "nav main aside"
+            "footer footer footer";
+        padding: 1em;
+        gap: 10px;
+    }
+}
+@media (max-width: 600px){
+    /* Upto 600 px this size will retain */
+    body{
+        display: grid;
+        grid-template-columns: 1fr 0.25fr 0.25fr;
+        grid-template-rows: 1fr 3fr 1fr ;
+        grid-template-areas: 
+            "header header nav"
+            "main aside aside"
+            "footer aside aside";
+    }
+}

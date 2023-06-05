@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>The DOM ....</h1>
+    <h2>The Create element() method</h2>
+
+    <p id="para1">I'm going to create a p1 element using DOM method</p>
+    <p id="para2" class="test1">I'm going to create a p2 element using DOM method</p>
+    <div id="para3">I'm going to create a p3 element using DOM method</div>
+    <p id="para4">I'm going to create a p4 element using DOM method</p>
+
+    <script>
+
+        const para1= document.getElementById("para1");
+        para1.style.color="red";
+        //Query Selector-- Applies a behaviour to the very 1st element of the selector
+        document.querySelector("p").style.backgroundColor="Yellow";
+        document.querySelector("#para4").style.backgroundColor="Yellow";
+        document.querySelector(".test1").style.backgroundColor="orange";
+
+        //Query Selector all-- bag up all the element into list, so we can use this bag to apply behaviour using loop soncepts
+        const nodeList=document.querySelectorAll("P");
+        for(let i=0;i<nodeList.length;i=i+2){
+            nodeList[i].style.backgroundColor="grey";
+        }
+
+        document.getElementById("para3").innerHTML=
+        "Browser inner window width: "+window.innerWidth+" px<br>"+
+        "Browser outer window width: "+window.outerWidth+" px<br>"+
+        "Browser inner window height: "+window.innerHeight+" px<br>"+
+        "Browser outer window height: "+window.outerHeight+" px<br>"+
+        "Browser screen  width: "+screen.width+" px<br>"+
+        "Browser screen  height: "+screen.height+" px<br>"+
+        "Browser Screen color depth: "+screen.colorDepth+" px<br>"+
+        "Browser Screen pixel depth: "+screen.pixelDepth+" px<br>"
+
+        //Create elemnt
+        const para= document.createElement("p");
+        para.innerText="This is the paragraph";
+        
+        //Append to body
+        document.body.appendChild(para);
+
+        // const name= prompt("Enetr name");
+        const noteToUser=document.createElement("div");
+        noteToUser.innerText="<p>Hi"+ name+"!!!</p>";
+        noteToUser.setAttribute("id","noteToUser")
+
+        document.body.appendChild(noteToUser);
+
+
+    </script>
+</body>
+</html>

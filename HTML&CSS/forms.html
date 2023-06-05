@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms</title>
+    <h1>Form tag</h1>
+    <style>
+        form {
+            position:relative;
+            top: 75px;
+            right: 75px;
+            height: fit-content;
+            width:fit-content;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        input {
+            border: 2px;
+            border-radius: 25%;
+        }
+        div1{
+            height: fit-content;
+            width: fit-content;
+            /* right: 75px; */
+            text-align: center;
+            background-color: aquamarine;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <form action="" method="post"> -->
+    <div1>
+        <form>
+            <div>
+                First name: <input type="text" name="first_name" placeholder="Enter Your name" />
+                <br>
+                Last name: <input type="Text" name="last_name" value="Enter your name" />
+                <br>
+            </div>
+            <div>
+                User name: <input type="text" name="User_id" value="Enter Your name" />
+                <br>
+                Password: <input type="password" name="Password" value="Enter your name" />
+                <br>
+                Comment: <br>
+                <textarea rows="3" cols="3" name="Comment"></textarea>
+                <br>
+            </div>
+            Mother Tongue: <br>
+            <input type="radio" name="mother_tongue" checked />Tamil
+            <input type="radio" name="mother_tongue" /> Arabic<br>
+            Subject: <br>
+            <input type="checkbox" name="tamil" checked />Tamil<br>
+            <input type="checkbox" name="Arabic" /> Arabic<br>
+            <br>
+            Date: <input type="date" name="Date" />
+            Countries: <br>
+            <select name="COntries_Dropdown">
+                <option value="Selected" selected hidden disabled>&lt;---Select---&gt;</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Srilanka">Srilanka</option>
+                <option value="CAnada">Canada</option>
+                <option value="Germany">Germany</option>
+                <option value="Armenia">Armenia</option>
+            </select><br>
+            Address Proof:
+            <input type="file" name="file_upload" /><br>
+            Save Here:
+            <input type="button" name="Save" value="CLick to save" />
+
+        </form>
+    </div1>
+</body>
+
+</html>

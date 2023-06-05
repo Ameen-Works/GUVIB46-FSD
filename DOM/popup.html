@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, Confirm & Prompt</title>
+</head>
+<body>
+    <h1>JS ALert</h1>
+    <button onclick="myALertFunction()">Click here for Alert!!!</button>
+    <h1>JS Confirm</h1>
+    <button onclick="myCOnfirmFunction()">Click to confirm</button>
+    <p id="confirmation"></p>
+    <h1>JS prompt</h1>
+    <button onclick="myPromptFunction()">Click to add user details!</button>
+    <p id="prompt"></p>
+    <script>
+        function myALertFunction(){
+            alert("This is responsive page");
+        };
+        function myCOnfirmFunction(){
+            var confirmation;
+            if(confirm("DO you want to confirm???")){
+                confirmation="Yes! Confirmed";
+            }
+            else{
+                confirmation="Not yet confirmed!!!"
+            }
+            document.getElementById("confirmation").innerHTML=confirmation;
+        };
+        function myPromptFunction(){
+            var user= prompt("Enter your name");
+            document.getElementById("prompt").innerHTML=user +" Got added into DB";
+        }
+        
+    </script>
+</body>
+</html>
